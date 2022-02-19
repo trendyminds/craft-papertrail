@@ -1,0 +1,93 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Craft PaperTrail plugin for Craft CMS 3.x
+ *
+ * Craft PaperTrail Settings.twig
+ *
+ * @author    TrendyMinds
+ * @copyright Copyright (c) 2022 TrendyMinds
+ * @link      https://trendyminds.com
+ * @package   CraftPapertrail
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+{% from "craft-paper-trail/_macros" import configWarning %}
+
+{% do view.registerAssetBundle("trendyminds\\craftpapertrail\\assetbundles\\craftpapertrail\\CraftPapertrailAsset") %}
+
+{{ forms.lightswitchField({
+    label: 'Enabled',
+    instructions: 'Enable exception logging',
+    warning: (config.enabled is defined ? configWarning('enabled')),
+    id: 'enabled',
+    name: 'enabled',
+    on: settings['enabled']
+}) }}
+
+{{ forms.textField({
+    label: 'Host',
+    instructions: 'Papertrail Host',
+    warning: (config.host is defined ? configWarning('host')),
+    id: 'host',
+    name: 'host',
+    value: settings['host']
+}) }}
+
+{{ forms.textField({
+    label: 'Port',
+    instructions: 'Papertrail Port',
+    warning: (config.port is defined ? configWarning('port')),
+    id: 'port',
+    name: 'port',
+    value: settings['port']
+}) }}
+
+{{ forms.textField({
+    instructions: 'Add an additional prefix to all logs. These will default to the Craft application id',
+    label: 'Additional Prefix',
+    warning: (config.additionalPrefix is defined ? configWarning('additionalPrefix')),
+    id: 'someAttradditionalPrefixibute',
+    name: 'additionalPrefix',
+    value: settings['additionalPrefix']
+}) }}
+
+{{ forms.checkboxField({
+    label: 'Send debug messages',
+    instructions: 'Controls whether debug level messages are sent',
+    warning: (config.debug is defined ? configWarning('debug')),
+    id: 'debug',
+    name: 'debug',
+    checked: settings['debug']
+}) }}
+
+{{ forms.checkboxField({
+    label: 'Send info messages',
+    instructions: 'Controls whether info level messages are sent',
+    warning: (config.info is defined ? configWarning('info')),
+    id: 'info',
+    name: 'info',
+    checked: settings['info']
+}) }}
+
+{{ forms.checkboxField({
+    label: 'Send warning messages',
+    instructions: 'Controls whether warning level messages are sent',
+    warning: (config.warning is defined ? configWarning('warning')),
+    id: 'warning',
+    name: 'warning',
+    checked: settings['warning']
+}) }}
+
+{{ forms.checkboxField({
+    label: 'Send error messages',
+    instructions: 'Controls whether error level messages are sent',
+    warning: (config.error is defined ? configWarning('error')),
+    id: 'error',
+    name: 'error',
+    checked: settings['error']
+}) }}
+
+

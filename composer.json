@@ -1,0 +1,41 @@
+{
+    "name": "trendyminds/craft-paper-trail",
+    "description": "A plugin to connect Craft logs to Papertrail.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "craft papertrail"
+    ],
+    "support": {
+        "docs": "https://github.com/trendyminds/craft-paper-trail/blob/master/README.md",
+        "issues": "https://github.com/trendyminds/craft-paper-trail/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TrendyMinds",
+            "homepage": "https://trendyminds.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "trendyminds\\craftpapertrail\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Craft PaperTrail",
+        "handle": "craft-paper-trail",
+        "developer": "TrendyMinds",
+        "developerUrl": "https://trendyminds.com",
+        "documentationUrl": "https://github.com/trendyminds/craft-paper-trail/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/trendyminds/craft-paper-trail/master/CHANGELOG.md",
+        "class": "trendyminds\\craftpapertrail\\CraftPapertrail"
+    }
+}
