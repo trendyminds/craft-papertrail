@@ -24,20 +24,10 @@ To install the plugin, follow these instructions.
 
 ## Craft PaperTrail Overview
 
-Papertrail is a
+[Papertrail](https://www.papertrail.com/) is a logging solution that is lowcost and simple to use. This plugin utilizes the "port" based log destination created in the Papertrail portal and sends Craft logs using a custom Yii log target.
 
 ## Configuring Craft PaperTrail
-
--Insert text here-
-
-## Using Craft PaperTrail
-
--Insert text here-
-
-## Craft PaperTrail Roadmap
-
-Some things to do, and ideas for potential features:
-
-* Release it
+You can either configure the plugin using the settings page or by using a configuration file.
+Copy 'config.php' to 'craft/config' then rename config to 'craft-paper-trail.php.
 
 Brought to you by [TrendyMinds](https://trendyminds.com)
