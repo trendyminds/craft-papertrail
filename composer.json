@@ -11,8 +11,8 @@
         "craft papertrail"
     ],
     "support": {
-        "docs": "https://github.com/trendyminds/craft-paper-trail/blob/master/README.md",
-        "issues": "https://github.com/trendyminds/craft-paper-trail/issues"
+        "docs": "https://github.com/trendyminds/craft-papertrail/blob/main/README.md",
+        "issues": "https://github.com/trendyminds/craft-papertrail/issues"
     },
     "license": "MIT",
     "authors": [
@@ -34,8 +34,7 @@
         "handle": "craft-paper-trail",
         "developer": "TrendyMinds",
         "developerUrl": "https://trendyminds.com",
-        "documentationUrl": "https://github.com/trendyminds/craft-paper-trail/blob/master/README.md",
-        "changelogUrl": "https://raw.githubusercontent.com/trendyminds/craft-paper-trail/master/CHANGELOG.md",
+        "documentationUrl": "https://github.com/trendyminds/craft-papertrail/blob/main/README.md",
         "class": "trendyminds\\craftpapertrail\\CraftPapertrail"
     }
 }
