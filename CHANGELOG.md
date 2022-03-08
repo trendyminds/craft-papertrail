@@ -11,3 +11,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ## 1.0.1 - 2022-03-08
 ### Added
 - Missing Composer package from composer.json
+
+## 1.0.2 - 2022-03-08
+### Added
+- Fixed Composer.json links
