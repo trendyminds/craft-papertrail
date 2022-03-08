@@ -7,3 +7,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ## 1.0.0 - 2022-02-18
 ### Added
 - Initial release
+
+## 1.0.1 - 2022-03-08
+### Added
+- Missing Composer package from composer.json
