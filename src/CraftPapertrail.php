@@ -102,11 +102,13 @@ class CraftPapertrail extends Plugin
         $request = Craft::$app->getRequest();
         if ($request->getIsSiteRequest() && !$request->getIsConsoleRequest() && !$request->getIsLivePreview()) {
             $levels = [
-                $this->settings->debug ? 'trace' : '',
-                $this->settings->info ? 'info' : '',
-                $this->settings->warning ? 'warning' : '',
-                $this->settings->error ? 'error' : '',
+                $this->settings->debug ? 'trace' : null,
+                $this->settings->info ? 'info' : null,
+                $this->settings->warning ? 'warning' : null,
+                $this->settings->error ? 'error' : null,
             ];
+
+            $levels = array_filter($levels);
 
             $this->set('profileTarget', [
                 'class' => PapertrailTarget::class,

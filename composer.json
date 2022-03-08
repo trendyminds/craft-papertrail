@@ -2,7 +2,7 @@
     "name": "trendyminds/craft-paper-trail",
     "description": "A plugin to connect Craft logs to Papertrail.",
     "type": "craft-plugin",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "keywords": [
         "craft",
         "cms",
